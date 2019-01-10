@@ -14,21 +14,22 @@
 </head>
 <body>
     <div id="main-container-div">
-
+      <!-- HEADER -->
         <div class="header">
           <input id="signupBtn" class="topButtons" type="button" value="Sign Up">
           <input id="signinBtn" class="topButtons" type="button" value="Sign In">
           <a id="pageTitle" class="logo-title">ScriBBler</a>
           <p class="middleText">Explore, Imagine, Create</p>
         </div>
-
+      <!--POST BUTTONS -->
         <div class="postButtons">
-          <input class="centerBtn" type="button" value="All Posts">
+          <input class="centerBtn" type="button" value="All Posts" onclick="window.location.href='./html/bloglist.html'">
           <input class="centerBtn" type="button" value="Create Post">
         </div>
 
     </div>
 
+<!--SIGN IN  MODAL -->
     <div id="signinModal" class="modal">
       <div class="modal-content">
           <span id="signinClose" class="close">&times;</span>
@@ -50,6 +51,7 @@
       </div>
     </div>
 
+    <!--SIGN UP  MODAL -->
     <div id="signupModal" class="modal">
       <div class="modal-content">
           <span id="signUpClose" class="close">&times;</span>
