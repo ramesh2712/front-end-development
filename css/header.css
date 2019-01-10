@@ -1,2 +1,46 @@
-/* Set a style for all elements inside the header i.e. Sign Up button, Sign In button, 
+/* Set a style for all elements inside the header i.e. Sign Up button, Sign In button,
 the title "ScriBBler" & the sub-heading below "ScriBBLer" */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+button:hover {
+ opacity:1;
+}
+input.topButtons {
+ width: 90px;
+ padding: 10px;
+ cursor: pointer;
+ font-weight: 500;
+ font-size: 90%;
+ background: #0000ff;
+ color: #fff;
+ float: right;
+
+ margin: 10px 10px 0px 0px;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo-title {
+font-family: 'Satisfy', cursive;
+font-size: 50px;
+color: #112fb4;
+margin: auto;
+text-decoration: none;
+margin: 10px 10px 0px 10px;
+}
+h1{
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+}
+.middleText{
+    font-family: 'Marck Script', cursive;
+    margin-top: 0;
+    margin: 0 0 0px 10px;
+}
