@@ -14,42 +14,91 @@
 </head>
 <body>
     <div id="main-container-div">
-
+      <!-- HEADER -->
         <div class="header">
-
-        	<!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
-
+          <input id="signupBtn" class="topButtons" type="button" value="Sign Up">
+          <input id="signinBtn" class="topButtons" type="button" value="Sign In">
+          <a id="pageTitle" class="logo-title">ScriBBler</a>
+          <p class="middleText">Explore, Imagine, Create</p>
         </div>
-           
+      <!--POST BUTTONS -->
         <div class="postButtons">
-
-        	<!-- Insert code for All Posts & Create Post button here -->
-
+          <input class="centerBtn" type="button" value="All Posts" onclick="window.location.href='./html/bloglist.html'">
+          <input id="createPostBtn" class="centerBtn" type="button" value="Create Post">
         </div>
-    </div>
-
-    <div>
-
-    	<!-- Insert code for Sign In modal here -->
 
     </div>
 
-    <div>
+<!--SIGN IN  MODAL -->
+    <div id="signinModal" class="modal">
+      <div class="modal-content">
+          <span id="signinClose" class="close">&times;</span>
+          <h1 style="text-align:center; padding:10px;">Welcome Back!</h1>
+          <hr>
+          <form>
+              <div class="container">
+                  <label><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username"  required>
 
-    	<!-- Insert code for Sign Up modal here -->
+                  <label><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" required>
 
+                  <button type="submit" class="signupbtn">Sign In</button>
+
+                  <p id="newMember" style="text-align:center; font-weight:bold;">Not a member? <span style="color:blue;" onclick="gotosignUp()">Sign Up</span></p>
+              </div>
+            </form>
+      </div>
     </div>
 
-    <div>
+    <!--SIGN UP  MODAL -->
+    <div id="signupModal" class="modal">
+      <div class="modal-content">
+          <span id="signUpClose" class="close">&times;</span>
+          <h1>Get Started</h1>
+          <hr>
+          <form>
+              <div class="container">
+                  <label><b>Full Name</b></label>
+                  <input type="text" placeholder="Enter Full Name" required>
 
-    	<!-- Insert code for Create Post modal here -->
+                  <label><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username"  required>
 
+                  <label><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" required>
+
+                  <label><b>Confirm Password</b></label>
+                  <input type="password" placeholder="Confirm Password"  required>
+
+                  <button type="submit" class="signupbtn">Sign Up</button>
+              </div>
+            </form>
+      </div>
+    </div>
+
+    <!--Create Post  MODAL -->
+    <div id="createPostModel" class="modal">
+      <div class="createPostModel-content">
+          <span id="createModalSpan" class="create-post-close">&times;</span>
+          <h1 style="text-align:center; padding:10px;">Pen Your Post</h1>
+            <form class="form-container">
+              <label><b>Title:</b></label>
+              <input type="text" style="width:50%;">
+
+              <label><b>Content:</b></label>
+              <textarea></textarea>
+              <div style="text-align:center;">
+                <button type="submit" style="width:10%;margin-bottom:0px;">Create</button>
+              </div>
+            </form>
+      </div>
     </div>
 
 	<!-- Place all Javascript for header in this file -->
 	<script src="js\header.js"></script>
 	<!-- Place all Javascript for rest of the elements in this file -->
-    <script src="js\index.js"></script>
+  <script src="js\index.js"></script>
 
 </body>
 </html>

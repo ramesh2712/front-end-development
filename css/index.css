@@ -8,7 +8,131 @@ body{
    background-size: 100% cover!important;
    overflow:hidden;
    display: block;
-} 
+}
 
-/* Set a style for the rest of the elements besides the header elements on the index.html page */
-                                 
+/* Post Button Styling */
+
+input.centerBtn {
+ padding: 10px;
+ cursor: pointer;
+ font-weight: bold;
+ font-size: 90%;
+ background: #D0B451;
+ color: black;
+ border: 2px inset #dddddd;
+ border: 2px outset;
+ margin: 10px 10px 0px 0px;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+.postButtons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+hr {
+  margin-bottom: 25px;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 92%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 5px 0 14px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  font-size:13px;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Create Post Styling */
+
+.createPostModel-content{
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  width: 70%;
+}
+.create-post-close{
+  color: black;
+  float: right;
+  font-size: 40px;
+  margin-right:25px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container {
+  padding: 20px;
+  margin:30px;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  height: 400px;
+  background: #f1f1f1;
+}
+label {
+  font-weight: normal;
+  margin-top:20px;
+}
