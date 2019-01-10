@@ -29,9 +29,30 @@
 
     </div>
 
+    <div id="signinModal" class="modal">
+      <div class="modal-content">
+          <span id="signinClose" class="close">&times;</span>
+          <h1>Welcome Back!</h1>
+          <hr>
+          <form>
+              <div class="container">
+                  <label><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username"  required>
+
+                  <label><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" required>
+
+                  <button type="submit" class="signupbtn">Sign In</button>
+
+                  <p id="newMember" style="text-align:center; font-weight:bold;">Not a member? <span style="color:blue;" onclick="gotosignUp()">Sign Up</span></p>
+              </div>
+            </form>
+      </div>
+    </div>
+
     <div id="signupModal" class="modal">
       <div class="modal-content">
-          <span class="close">&times;</span>
+          <span id="signUpClose" class="close">&times;</span>
           <h1>Get Started</h1>
           <hr>
           <form>
@@ -52,11 +73,6 @@
               </div>
             </form>
       </div>
-    </div>
-
-    <div>
-
-    	<!-- Insert code for Sign Up modal here -->
 
     </div>
 

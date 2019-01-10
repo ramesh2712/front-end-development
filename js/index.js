@@ -1,25 +1,51 @@
-// Get the modal
-var modal = document.getElementById('signupModal');
+// Get the Signup modal
+var signupModal = document.getElementById('signupModal');
 
-// Get the button that opens the modal
-var btn = document.getElementById("signupBtn");
+// Get the SignIn modal
+var signinModal = document.getElementById('signinModal');
+
+// Get the signup button that opens the modal
+var signupbtn = document.getElementById("signupBtn");
+
+// Get the signin button that opens the modal
+var signinbtn = document.getElementById("signinBtn");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var signInSpan = document.getElementById("signinClose");
 
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
+// Get the <span> element that closes the modal
+var signUpSpan = document.getElementById("signUpClose");
+
+// When the user clicks on the signup button, open the modal
+signupbtn.onclick = function() {
+  signupModal.style.display = "block";
+}
+
+// When the user clicks on the signin button, open the modal
+signinbtn.onclick = function() {
+  signinModal.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+signInSpan.onclick = function() {
+  signinModal.style.display = "none";
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
+signUpSpan.onclick = function() {
+  signupModal.style.display = "none";
 }
-
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  if (event.target == signupModal) {
+    signupModal.style.display = "none";
   }
+  if (event.target == signinModal){
+    signinModal.style.display = "none";
+  }
+}
+
+// on click when user is not a member and go to signup screen
+function gotosignUp() {
+  signinModal.style.display = "none";
+  signupModal.style.display = "block";
 }
