@@ -8,7 +8,27 @@ body{
    background-size: 100% cover!important;
    overflow:hidden;
    display: block;
-} 
+}
 
-/* Set a style for the rest of the elements besides the header elements on the index.html page */
-                                 
+/* Post Button Styling */
+
+input.centerBtn {
+ padding: 10px;
+ cursor: pointer;
+ font-weight: bold;
+ font-size: 90%;
+ background: #D0B451;
+ color: black;
+ border: 2px inset #dddddd;
+ border: 2px outset;
+ margin: 10px 10px 0px 0px;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+.postButtons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}

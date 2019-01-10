@@ -1,18 +1,8 @@
 /* Set a style for all elements inside the header i.e. Sign Up button, Sign In button,
 the title "ScriBBler" & the sub-heading below "ScriBBLer" */
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-}
-button:hover {
- opacity:1;
-}
+
+/* Header Styling */
+
 input.topButtons {
  width: 90px;
  padding: 10px;
@@ -22,7 +12,8 @@ input.topButtons {
  background: #0000ff;
  color: #fff;
  float: right;
-
+ border: 2px inset #dddddd;
+ border: 2px outset;
  margin: 10px 10px 0px 0px;
  font-family: Arial, Helvetica, sans-serif;
 }
