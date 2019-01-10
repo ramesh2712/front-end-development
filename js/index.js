@@ -49,3 +49,23 @@ function gotosignUp() {
   signinModal.style.display = "none";
   signupModal.style.display = "block";
 }
+
+
+// get create post modal ...
+var createPostModel = document.getElementById('createPostModel');
+
+// Get the signup button that opens the modal
+var createPostBtn = document.getElementById("createPostBtn");
+
+// Get the <span> element that closes the create modal
+var createModalSpan = document.getElementById("createModalSpan");
+
+// When the user clicks on <span> (x), close the modal
+createModalSpan.onclick = function() {
+  createPostModel.style.display = "none";
+}
+
+// When the user clicks on the create Post button, open the modal
+createPostBtn.onclick = function() {
+  createPostModel.style.display = "block";
+}
