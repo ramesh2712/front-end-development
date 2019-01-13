@@ -37,7 +37,7 @@ var projectListObjects = [
                 '<p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>'
                 +
                 '</br>'+
-                '<p id="three-dots">...</p>'+
+                '<img src="../css/ellipsis-h.png"  height="25" width="25"  class="pull-right">'+
                '</div>';
             
                if(removedPosts.includes(index)==false){
